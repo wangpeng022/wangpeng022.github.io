@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017/11 | Hexo</title>
+  <title>Hexo</title>
   <meta name="author" content="Turbing">
+  
+  <meta name="description" content="Action creator
+Redux 中的 action creator 不会直接把 action 发送给 dispatcher，而是返回一个格式化好的 JavaScript 对象。
+
+2. state:app中的状态存放的地方，并且state是只读的，不同于React，Redux中state的">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -112,17 +117,32 @@
 		<div class="content">
 			<!-- index -->
 		   
-			  	<h2>归档</h2>
-		  		
-	              <p class="archive-item">
-						<a href="/2017/11/28/二叉树/" class="archive-title">ww</a><span class="archive post-time">2017-11-28</span>
-					</p>
-			  	
-	              <p class="archive-item">
-						<a href="/2017/11/28/react-action/" class="archive-title"></a><span class="archive post-time">2017-11-28</span>
-					</p>
-			  	
-			  <!-- post -->
+
+			  		<h2></h2>
+					
+					<div>
+						<span class="post-time">2017-11-28 21:40:28</span>
+					</div>	
+					
+
+					<div class="article-content">
+						<h3 id="Action-creator"><a href="#Action-creator" class="headerlink" title="Action creator"></a>Action creator</h3><ol>
+<li>Redux 中的 action creator 不会直接把 action 发送给 dispatcher，而是返回一个格式化好的 JavaScript 对象。</li>
+</ol>
+<p>2.<br> <strong>state</strong>:app中的状态存放的地方，并且state是只读的，不同于React，Redux中state的更改，其实是创建了一个全新的state；</p>
+<ol>
+<li><strong>action</strong>:是一个对象，作用和他的名字一样，用来表明，你想要做的那件事情，该对象的属性type，用来标记，你要做的事情；</li>
+</ol>
+<p><strong>reducer</strong>:是一个函数，接收当前state，和一个action作为参数，依据action基于当前的state生成新的state;<br><strong>dispatch</strong>:推送某个action给reducer;</p>
+<p><strong>action creater</strong>:一个创建action的函数，返回一个action对象；<br>异步action：返回一个函数，和中间件配合可以很容易的实现异步操作；</p>
+<p><strong>store</strong>:可以理解为state的家，全局只有一个，有以下方法</p>
+<p><strong>getState()</strong>:获取当前的state树；</p>
+<p><strong>dispatch(action)</strong>:触发一个action,创建state;<br><strong>subscribe(listener)</strong>:</p>
+<p><strong>replaceReducer(nextReducer)</strong><br><strong>combineRedecers(reducers)</strong>：当我们的应用比较复杂的时候，我们可能会分开写好几个reducer，这个函数的作用就是把这些单独的reduce合并为一个大的reduce，需要注意的是我们的state的结构和我们的各个reducer是一一对应的。<br>applyMiddleware(…middlewares):告诉redux我们会用到那些中间件，比如说要用到基础的异步，我们会用到thunk中间件；</p>
+
+					</div>
+
+			  <!-- about -->
 			  
 		</div>
 
@@ -131,6 +151,8 @@
 
 		<div class="comment-section">
   
+  
+
 
 </div>
 	</div>
