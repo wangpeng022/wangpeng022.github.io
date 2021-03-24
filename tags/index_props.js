@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-24T06:01:51.000Z",
+    'date': "2021-03-24T06:17:37.000Z",
     'updated': null,
     'excerpt': "",
     'cover': undefined,
@@ -33,7 +33,7 @@ export default {
                 "pagePath": "posts/2021/写在开头.md",
                 "title": "前言",
                 "link": "posts/2021/写在开头.html",
-                "date": "2021-03-24T06:01:51.000Z",
+                "date": "2021-03-24T06:17:37.000Z",
                 "updated": null,
                 "author": "wangpeng022@sina.cn",
                 "contributors": [
