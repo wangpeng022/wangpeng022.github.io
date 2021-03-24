@@ -4,11 +4,11 @@
  * @Author: 王鹏
  * @Date: 2021-03-23 17:37:15
  * @LastEditors: 王鹏
- * @LastEditTime: 2021-03-24 09:18:31
+ * @LastEditTime: 2021-03-24 14:01:31
  */
 export default {
     theme: 'blog',
-    root: '/dist/',
+    // root: '/dist/',
     title: '我的博客',
     description: '个人博客',
     srcDir: 'blog',
