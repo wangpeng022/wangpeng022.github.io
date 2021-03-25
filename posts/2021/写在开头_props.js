@@ -51,7 +51,7 @@ export default {
                 "tags": [
                     "其他"
                 ],
-                "excerpt": "测试数据"
+                "excerpt": "1.安装Pagic之前,需要有deno环境 查看自己是否安装了deno deno -V https://ftp.bmp.ovh/imgs/2021/03/63349568fa5374a7.png # 安装 pagic deno install --unstable --allow-read --allow-write --allow-net --allow-run --name..."
             },
             {
                 "pagePath": "posts/2021/写在开头.md",

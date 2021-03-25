@@ -25,7 +25,7 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-25T00:58:52.000Z",
+    'date': "2021-03-25T05:48:29.000Z",
     'updated': null,
     'excerpt': "自我介绍",
     'cover': undefined,
@@ -48,7 +48,7 @@ export default {
                 "tags": [
                     "其他"
                 ],
-                "excerpt": "测试数据"
+                "excerpt": "1.安装Pagic之前,需要有deno环境 查看自己是否安装了deno deno -V https://ftp.bmp.ovh/imgs/2021/03/63349568fa5374a7.png # 安装 pagic deno install --unstable --allow-read --allow-write --allow-net --allow-run --name..."
             },
             {
                 "pagePath": "posts/2021/写在开头.md",
