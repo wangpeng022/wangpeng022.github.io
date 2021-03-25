@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-25T00:52:33.000Z",
+    'date': "2021-03-25T00:58:52.000Z",
     'updated': null,
     'excerpt': "友情链接 1 2 3",
     'cover': undefined,

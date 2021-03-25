@@ -4,7 +4,7 @@
  * @Author: 王鹏
  * @Date: 2021-03-23 17:37:15
  * @LastEditors: 王鹏
- * @LastEditTime: 2021-03-24 14:01:31
+ * @LastEditTime: 2021-03-25 08:58:27
  */
 export default {
     theme: 'blog',
@@ -17,7 +17,7 @@ export default {
         root: '/posts/',
         author: 'wangpeng',
         social: {
-            github: 'https://github.com/wangpeng022',
+            github: 'wangpeng022',
             email: 'wangpeng022@sina.cn',
         },
     },
