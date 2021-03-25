@@ -1,12 +1,12 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "posts/2021/写在开头.md",
+    'pagePath': "posts/2021/使用Pagic.md",
     'layoutPath': "posts/_layout.tsx",
-    'outputPath': "posts/2021/写在开头.html",
-    'title': "写在开头",
+    'outputPath': "posts/2021/使用Pagic.html",
+    'title': "使用Pagic",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>前言1</h1>\n<p>新的blog,新的开始</p>'
+            __html: '<h1>前言1</h1>\n<p>测试数据</p>'
         } }),
     'head': null,
     'script': React.createElement(React.Fragment, null,
@@ -15,16 +15,16 @@ export default {
         React.createElement("script", { src: "/index.js", type: "module" })),
     'contentTitle': React.createElement("h1", { key: "0" }, "\u524D\u8A001"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>新的blog,新的开始</p>'
+            __html: '<p>测试数据</p>'
         } }),
     'toc': null,
     'author': "Peng",
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021/03/23",
+    'date': "2021/03/25",
     'updated': null,
-    'excerpt': "新的blog,新的开始",
+    'excerpt': "测试数据",
     'cover': undefined,
     'categories': [
         "其他"

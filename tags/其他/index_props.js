@@ -1,39 +1,18 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "posts/2021/写在开头.md",
-    'layoutPath': "posts/_layout.tsx",
-    'outputPath': "posts/2021/写在开头.html",
-    'title': "写在开头",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>前言1</h1>\n<p>新的blog,新的开始</p>'
-        } }),
+    'pagePath': "tags/其他/",
+    'layoutPath': "archives/_layout.tsx",
+    'outputPath': "tags/其他/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "\u524D\u8A001"),
-    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>新的blog,新的开始</p>'
-        } }),
-    'toc': null,
-    'author': "Peng",
-    'contributors': [
-        "wangpeng022@sina.cn"
-    ],
-    'date': "2021/03/23",
-    'updated': null,
-    'excerpt': "新的blog,新的开始",
-    'cover': undefined,
-    'categories': [
-        "其他"
-    ],
-    'tags': [
-        "其他"
-    ],
+    'title': "其他",
+    'content': null,
     'blog': {
-        "isPost": true,
+        "isPost": false,
         "posts": [
             {
                 "pagePath": "posts/2021/使用Pagic.md",
