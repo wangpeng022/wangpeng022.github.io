@@ -1,12 +1,12 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "links/README.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "links/index.html",
-    'title': "友情链接",
+    'pagePath': "posts/CentOS/配置CentOS网络.md",
+    'layoutPath': "posts/_layout.tsx",
+    'outputPath': "posts/CentOS/配置CentOS网络.html",
+    'title': "配置CentOS网络",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<!--\n * @Descripttion: \n * @version: \n * @Author: 王鹏\n * @Date: 2021-03-23 17:37:15\n * @LastEditors: 王鹏\n * @LastEditTime: 2021-03-25 08:28:30\n-->\n<h1>友情链接</h1>\n<p>1\n2\n3</p>'
+            __html: '<p>1.打开配置文件</p>\n<pre class="language-vim"><code class="language-vim"><span class="token keyword">vi</span> <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>network<span class="token operator">-</span>scripts<span class="token operator">/</span>ifcfg<span class="token operator">-</span>eth0\n\n</code></pre>\n<p>2.编辑配置文件</p>\n<pre class="language-autoit"><code class="language-autoit"># 从dhcp改成<span class="token keyword">static</span>\nBOOTPROTO<span class="token operator">=</span><span class="token keyword">static</span>\n# 从no改成yes。系统将在启动时自动开启该接口。\nONBOOT<span class="token operator">=</span>yes\n# 设置IP地址\nIPADDR<span class="token operator">=</span><span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.200</span>\n# 设置子网掩码\nNETMASK<span class="token operator">=</span><span class="token number">255.255</span><span class="token punctuation">.</span><span class="token number">255.0</span>\n# 设置网关\nGATEWAY<span class="token operator">=</span><span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.1</span>\n# 设置DNS\nDNS1<span class="token operator">=</span><span class="token number">211.167</span><span class="token punctuation">.</span><span class="token number">230.100</span>\nDNS2<span class="token operator">=</span><span class="token number">211.167</span><span class="token punctuation">.</span><span class="token number">230.200</span>\n# 表示该接口将通过该配置文件进行设置，而不是通过网络管理器进行管理\nNM_CONTROLLED<span class="token operator">=</span>no\n\n</code></pre>\n<p>tips: 在Parallels Desktop虚拟机下，一定要将网络设置改为wifi。</p>'
         } }),
     'head': null,
     'script': React.createElement(React.Fragment, null,
@@ -15,19 +15,25 @@ export default {
         React.createElement("script", { src: "/index.js", type: "module" })),
     'contentTitle': undefined,
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<!--\n * @Descripttion: \n * @version: \n * @Author: 王鹏\n * @Date: 2021-03-23 17:37:15\n * @LastEditors: 王鹏\n * @LastEditTime: 2021-03-25 08:28:30\n-->\n<h1>友情链接</h1>\n<p>1\n2\n3</p>'
+            __html: '<p>1.打开配置文件</p>\n<pre class="language-vim"><code class="language-vim"><span class="token keyword">vi</span> <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>network<span class="token operator">-</span>scripts<span class="token operator">/</span>ifcfg<span class="token operator">-</span>eth0\n\n</code></pre>\n<p>2.编辑配置文件</p>\n<pre class="language-autoit"><code class="language-autoit"># 从dhcp改成<span class="token keyword">static</span>\nBOOTPROTO<span class="token operator">=</span><span class="token keyword">static</span>\n# 从no改成yes。系统将在启动时自动开启该接口。\nONBOOT<span class="token operator">=</span>yes\n# 设置IP地址\nIPADDR<span class="token operator">=</span><span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.200</span>\n# 设置子网掩码\nNETMASK<span class="token operator">=</span><span class="token number">255.255</span><span class="token punctuation">.</span><span class="token number">255.0</span>\n# 设置网关\nGATEWAY<span class="token operator">=</span><span class="token number">192.168</span><span class="token punctuation">.</span><span class="token number">0.1</span>\n# 设置DNS\nDNS1<span class="token operator">=</span><span class="token number">211.167</span><span class="token punctuation">.</span><span class="token number">230.100</span>\nDNS2<span class="token operator">=</span><span class="token number">211.167</span><span class="token punctuation">.</span><span class="token number">230.200</span>\n# 表示该接口将通过该配置文件进行设置，而不是通过网络管理器进行管理\nNM_CONTROLLED<span class="token operator">=</span>no\n\n</code></pre>\n<p>tips: 在Parallels Desktop虚拟机下，一定要将网络设置改为wifi。</p>'
         } }),
     'toc': null,
-    'author': "wangpeng022@sina.cn",
+    'author': "Peng",
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-30T08:10:08.000Z",
+    'date': "2021/03/30",
     'updated': null,
-    'excerpt': "友情链接 1 2 3",
+    'excerpt': "1.打开配置文件 vi /etc/sysconfig/network-scripts/ifcfg-eth0 2.编辑配置文件 # 从dhcp改成static BOOTPROTO=static # 从no改成yes。系统将在启动时自动开启该接口。 ONBOOT=yes # 设置IP地址 IPADDR=192.168.0.200 # 设置子...",
     'cover': undefined,
+    'categories': [
+        "CentOS"
+    ],
+    'tags': [
+        "CentOS"
+    ],
     'blog': {
-        "isPost": false,
+        "isPost": true,
         "posts": [
             {
                 "pagePath": "posts/TypeScript/初识TS.md",

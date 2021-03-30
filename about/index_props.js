@@ -25,7 +25,7 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-30T03:19:11.000Z",
+    'date': "2021-03-30T08:10:08.000Z",
     'updated': null,
     'excerpt': "自我介绍",
     'cover': undefined,
@@ -49,6 +49,24 @@ export default {
                     "TS"
                 ],
                 "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
+            },
+            {
+                "pagePath": "posts/CentOS/配置CentOS网络.md",
+                "title": "配置CentOS网络",
+                "link": "posts/CentOS/配置CentOS网络.html",
+                "date": "2021/03/30",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "CentOS"
+                ],
+                "tags": [
+                    "CentOS"
+                ],
+                "excerpt": "1.打开配置文件 vi /etc/sysconfig/network-scripts/ifcfg-eth0 2.编辑配置文件 # 从dhcp改成static BOOTPROTO=static # 从no改成yes。系统将在启动时自动开启该接口。 ONBOOT=yes # 设置IP地址 IPADDR=192.168.0.200 # 设置子..."
             },
             {
                 "pagePath": "posts/2021/使用Pagic.md",
@@ -93,6 +111,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "CentOS",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -101,6 +123,10 @@ export default {
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "CentOS",
+                "count": 1
             },
             {
                 "name": "TS",

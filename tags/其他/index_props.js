@@ -57,6 +57,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "CentOS",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -65,6 +69,10 @@ export default {
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "CentOS",
+                "count": 1
             },
             {
                 "name": "TS",
