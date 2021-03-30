@@ -22,13 +22,31 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-03-25T05:48:29.000Z",
+    'date': "2021-03-30T03:19:11.000Z",
     'updated': null,
     'excerpt': "友情链接 1 2 3",
     'cover': undefined,
     'blog': {
         "isPost": false,
         "posts": [
+            {
+                "pagePath": "posts/TypeScript/初识TS.md",
+                "title": "初识TS",
+                "link": "posts/TypeScript/初识TS.html",
+                "date": "2021/03/30",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "TS"
+                ],
+                "tags": [
+                    "TS"
+                ],
+                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
+            },
             {
                 "pagePath": "posts/2021/使用Pagic.md",
                 "title": "使用Pagic",
@@ -70,12 +88,20 @@ export default {
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "TS",
+                "count": 1
             }
         ],
         "tags": [
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "TS",
+                "count": 1
             }
         ]
     }

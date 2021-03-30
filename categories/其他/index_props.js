@@ -55,12 +55,20 @@ export default {
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "TS",
+                "count": 1
             }
         ],
         "tags": [
             {
                 "name": "其他",
                 "count": 2
+            },
+            {
+                "name": "TS",
+                "count": 1
             }
         ]
     }

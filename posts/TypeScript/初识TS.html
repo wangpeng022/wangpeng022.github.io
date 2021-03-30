@@ -1,0 +1,90 @@
+<!doctype html><html class="" data-reactroot=""><head>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="个人博客"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">初识TS · 我的博客</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><a class="czs-menu-l show_on_mobile aside_button_open" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a><a class="show_on_mobile aside_button_text" href="/">我的博客</a><aside class="hide_on_mobile"><div class="aside_card"><a class="czs-menu-l show_on_mobile aside_button_close" href="#" style="background-image:url(&quot;/assets/czs-close-l.svg&quot;)"></a><h1><a href="/">我的博客</a></h1><p class="description">个人博客</p><ul class="social list_style_none"><li class="flex_center"><a class="czs-github-logo" href="https://github.com/wangpeng022" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="flex_center"><a class="czs-message-l" href="mailto:wangpeng022@sina.cn" target="_blank" style="background-image:url(&quot;/assets/czs-message-l.svg&quot;)"></a></li><li style="flex-grow:1"></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul><nav><ul class="menu list_style_none"><li><a class="flex_center" href="/"><span class="czs-home-l" style="background-image:url(&quot;/assets/czs-home-l.svg&quot;)"></span>首页</a></li><li><a class="flex_center" href="/categories/"><span class="czs-category-l" style="background-image:url(&quot;/assets/czs-category-l.svg&quot;)"></span>分类</a></li><li><a class="flex_center" href="/tags/"><span class="czs-tag-l" style="background-image:url(&quot;/assets/czs-tag-l.svg&quot;)"></span>标签</a></li><li><a class="flex_center" href="/about/"><span class="czs-about-l" style="background-image:url(&quot;/assets/czs-about-l.svg&quot;)"></span>关于</a></li><li><a class="flex_center" href="/archives/"><span class="czs-box-l" style="background-image:url(&quot;/assets/czs-box-l.svg&quot;)"></span>归档</a></li><li><a class="flex_center" href="/links/index.html"><span class="czs-link-l" style="background-image:url(&quot;/assets/czs-link-l.svg&quot;)"></span>友情链接</a></li></ul></nav></div><nav class="toc"><ol><li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li><li><a href="#%E5%BC%80%E6%92%B8%E4%BB%A3%E7%A0%81">开撸代码</a></li></ol></nav></aside><section class="main"><div class="main_post_meta"><time dateTime="2021/03/30">2021-03-31</time> · <!-- -->Peng</div><article><h3 id="%E6%A6%82%E8%BF%B0">概述<a class="anchor" href="#%E6%A6%82%E8%BF%B0">§</a></h3>
+<p>TS -&gt; typescript  javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。</p>
+<h3 id="%E5%BC%80%E6%92%B8%E4%BB%A3%E7%A0%81">开撸代码<a class="anchor" href="#%E5%BC%80%E6%92%B8%E4%BB%A3%E7%A0%81">§</a></h3>
+<p>1.interface - &gt; 接口</p>
+<pre class="language-javascript"><code class="language-javascript"> <span class="token keyword">interface</span> <span class="token class-name">A</span> <span class="token punctuation">{</span>
+   num<span class="token operator">:</span> number<span class="token punctuation">,</span>
+   str<span class="token operator">:</span> string
+ <span class="token punctuation">}</span>
+ <span class="token keyword">let</span> obj<span class="token operator">:</span><span class="token constant">A</span> <span class="token operator">=</span> <span class="token punctuation">{</span>a<span class="token operator">:</span><span class="token number">123</span><span class="token punctuation">,</span>b<span class="token operator">:</span><span class="token string">'456'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>2.联合类型</p>
+<pre class="language-javascript"><code class="language-javascript"> <span class="token keyword">let</span> numOrStr<span class="token operator">:</span> number<span class="token operator">|</span>string <span class="token operator">=</span> <span class="token number">123</span>
+</code></pre>
+<p>tip: 实在预测不到类型的可以直接使用 any</p>
+<p>3.定义数组</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// 纯数字类型</span>
+<span class="token keyword">let</span> arr<span class="token operator">:</span> number<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span> 
+<span class="token comment">// 纯字符串类型</span>
+<span class="token keyword">let</span> arr2<span class="token operator">:</span> string<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'str'</span><span class="token punctuation">,</span> <span class="token string">'str'</span><span class="token punctuation">,</span> <span class="token string">'str'</span><span class="token punctuation">]</span>
+<span class="token comment">// 混合类型</span>
+<span class="token keyword">let</span> arr3<span class="token operator">:</span> any<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'str'</span><span class="token punctuation">,</span> <span class="token string">'str'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 使用接口</span>
+<span class="token keyword">interface</span> <span class="token class-name">arr</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>index<span class="token operator">:</span> number<span class="token punctuation">]</span><span class="token operator">:</span> number
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> list<span class="token operator">:</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+
+<span class="token comment">// 使用范型</span>
+<span class="token keyword">let</span> arrF<span class="token operator">:</span> <span class="token known-class-name class-name">Array</span><span class="token operator">&lt;</span>number<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
+
+</code></pre>
+<p>4.配置</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tsconfig.json</span>
+<span class="token punctuation">{</span>
+    <span class="token string">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 不报告执行不到的代码错误。</span>
+        <span class="token string">"allowUnreachableCode"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 必须标注为null类型,才可以赋值为null</span>
+        <span class="token string">"strictNullChecks"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 严格模式, 强烈建议开启</span>
+        <span class="token string">"strict"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 支持别名导入:</span>
+        <span class="token comment">// import * as React from "react"</span>
+        <span class="token string">"esModuleInterop"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 目标js的版本</span>
+        <span class="token string">"target"</span><span class="token operator">:</span> <span class="token string">"es5"</span><span class="token punctuation">,</span>
+        <span class="token comment">// 目标代码的模块结构版本</span>
+        <span class="token string">"module"</span><span class="token operator">:</span> <span class="token string">"es6"</span><span class="token punctuation">,</span>
+        <span class="token comment">// 在表达式和声明上有隐含的 any类型时报错。</span>
+        <span class="token string">"noImplicitAny"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 删除注释</span>
+        <span class="token string">"removeComments"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 保留 const和 enum声明</span>
+        <span class="token string">"preserveConstEnums"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token comment">// 生成sourceMap    </span>
+        <span class="token string">"sourceMap"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 目标文件所在路径</span>
+        <span class="token string">"outDir"</span><span class="token operator">:</span> <span class="token string">"./lib"</span><span class="token punctuation">,</span>
+        <span class="token comment">// 编译过程中需要引入的库文件的列表</span>
+        <span class="token string">"lib"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"dom"</span><span class="token punctuation">,</span>
+            <span class="token string">"es7"</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// 额外支持解构/forof等功能</span>
+        <span class="token string">"downlevelIteration"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 是否生成声明文件</span>
+        <span class="token string">"declaration"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 声明文件路径</span>
+        <span class="token string">"declarationDir"</span><span class="token operator">:</span> <span class="token string">"./lib"</span><span class="token punctuation">,</span>
+        <span class="token comment">// 此处设置为node,才能解析import xx from 'xx'</span>
+        <span class="token string">"moduleResolution"</span><span class="token operator">:</span> <span class="token string">"node"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 入口文件</span>
+    <span class="token string">"include"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"src/main.ts"</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></article></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>
