@@ -1,0 +1,81 @@
+<!doctype html><html class="" data-reactroot=""><head>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="个人博客"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">Centos下jenkins安装 · 我的博客</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><a class="czs-menu-l show_on_mobile aside_button_open" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a><a class="show_on_mobile aside_button_text" href="/">我的博客</a><aside class="hide_on_mobile"><div class="aside_card"><a class="czs-menu-l show_on_mobile aside_button_close" href="#" style="background-image:url(&quot;/assets/czs-close-l.svg&quot;)"></a><h1><a href="/">我的博客</a></h1><p class="description">个人博客</p><ul class="social list_style_none"><li class="flex_center"><a class="czs-github-logo" href="https://github.com/wangpeng022" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="flex_center"><a class="czs-message-l" href="mailto:wangpeng022@sina.cn" target="_blank" style="background-image:url(&quot;/assets/czs-message-l.svg&quot;)"></a></li><li style="flex-grow:1"></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul><nav><ul class="menu list_style_none"><li><a class="flex_center" href="/"><span class="czs-home-l" style="background-image:url(&quot;/assets/czs-home-l.svg&quot;)"></span>首页</a></li><li><a class="flex_center" href="/categories/"><span class="czs-category-l" style="background-image:url(&quot;/assets/czs-category-l.svg&quot;)"></span>分类</a></li><li><a class="flex_center" href="/tags/"><span class="czs-tag-l" style="background-image:url(&quot;/assets/czs-tag-l.svg&quot;)"></span>标签</a></li><li><a class="flex_center" href="/about/"><span class="czs-about-l" style="background-image:url(&quot;/assets/czs-about-l.svg&quot;)"></span>关于</a></li><li><a class="flex_center" href="/archives/"><span class="czs-box-l" style="background-image:url(&quot;/assets/czs-box-l.svg&quot;)"></span>归档</a></li><li><a class="flex_center" href="/links/index.html"><span class="czs-link-l" style="background-image:url(&quot;/assets/czs-link-l.svg&quot;)"></span>友情链接</a></li></ul></nav></div><nav class="toc"><ol><li><a href="#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">安装步骤：</a></li></ol></nav></aside><section class="main"><div class="main_post_meta"><time dateTime="2021/03/31">2021-03-32</time> · <!-- -->Peng</div><article><h3 id="%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">安装步骤：<a class="anchor" href="#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">§</a></h3>
+<ol>
+<li>安装java,jenkins依赖java环境；</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">yum install java
+
+</code></pre>
+<ol start="2">
+<li>安装wget（没有安装的话）</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">yum install wget <span class="token operator">-</span>y
+
+</code></pre>
+<ol start="3">
+<li>下载 jenkins 依赖</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">sudo wget <span class="token operator">-</span>O <span class="token operator">/</span>etc<span class="token operator">/</span>yum<span class="token punctuation">.</span>repos<span class="token punctuation">.</span>d<span class="token operator">/</span>jenkins<span class="token punctuation">.</span>repo https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>pkg<span class="token punctuation">.</span>jenkins<span class="token punctuation">.</span>io<span class="token operator">/</span>redhat<span class="token operator">-</span>stable<span class="token operator">/</span>jenkins<span class="token punctuation">.</span>repo
+
+</code></pre>
+<ol start="4">
+<li>导入秘钥</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">sudo rpm <span class="token operator">-</span><span class="token operator">-</span>import https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>pkg<span class="token punctuation">.</span>jenkins<span class="token punctuation">.</span>io<span class="token operator">/</span>redhat<span class="token operator">-</span>stable<span class="token operator">/</span>jenkins<span class="token punctuation">.</span>io<span class="token punctuation">.</span>key
+
+</code></pre>
+<ol start="5">
+<li>安装 Jenkins</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">yum install jenkins
+
+</code></pre>
+<ol start="6">
+<li>修改root权限, 把JENKINS_USER 改为 &quot;root&quot;</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">vim <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>jenkins
+
+</code></pre>
+<ol start="7">
+<li>更改 jenkins 主要目录所有权</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">chown <span class="token operator">-</span>R root<span class="token punctuation">:</span>root <span class="token operator">/</span>var<span class="token operator">/</span>lib<span class="token operator">/</span>jenkins
+chown <span class="token operator">-</span>R root<span class="token punctuation">:</span>root <span class="token operator">/</span>var<span class="token operator">/</span>cache<span class="token operator">/</span>jenkins
+chown <span class="token operator">-</span>R root<span class="token punctuation">:</span>root <span class="token operator">/</span>var<span class="token operator">/</span>log<span class="token operator">/</span>jenkins
+
+</code></pre>
+<ol start="8">
+<li>启动|停止|重启指令</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">service jenkins start 开始
+service jenkins restart 重启
+service jenkins stop 停止
+service jenkins status 查看状态
+
+</code></pre>
+<p>初次启动会log出来一个管理员密码，复制到8080端口下的页面中。</p>
+<ol start="9">
+<li>更改默认端口(默认：8080)</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit">vim <span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>jenkins
+
+</code></pre>
+<ol start="10">
+<li>相关目录</li>
+</ol>
+<pre class="language-autoit"><code class="language-autoit"><span class="token operator">/</span>usr<span class="token operator">/</span>lib<span class="token operator">/</span>jenkins<span class="token operator">/</span>：jenkins安装目录，war包会放在这里
+<span class="token operator">/</span>etc<span class="token operator">/</span>sysconfig<span class="token operator">/</span>jenkins：jenkins配置文件，“端口”，“JENKINS_HOME”等都可以在这里配置。
+<span class="token operator">/</span>var<span class="token operator">/</span>lib<span class="token operator">/</span>jenkins<span class="token operator">/</span>：默认的JENKINS_HOME。
+<span class="token operator">/</span>var<span class="token operator">/</span>log<span class="token operator">/</span>jenkins<span class="token operator">/</span>jenkins<span class="token punctuation">.</span>log：jenkins日志文件。
+
+</code></pre></article></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

@@ -41,6 +41,24 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/CentOS/jenkins安装.md",
+                "title": "Centos下jenkins安装",
+                "link": "posts/CentOS/jenkins安装.html",
+                "date": "2021/03/31",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "jenkins"
+                ],
+                "tags": [
+                    "jenkins"
+                ],
+                "excerpt": "安装步骤： 1. 安装java,jenkins依赖java环境； yum install java 2. 安装wget（没有安装的话） yum install wget -y 3. 下载 jenkins 依赖 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable..."
+            },
+            {
                 "pagePath": "posts/TypeScript/初识TS.md",
                 "title": "初识TS",
                 "link": "posts/TypeScript/初识TS.html",
@@ -123,6 +141,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "jenkins",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -134,6 +156,10 @@ export default {
             },
             {
                 "name": "CentOS",
+                "count": 1
+            },
+            {
+                "name": "jenkins",
                 "count": 1
             },
             {

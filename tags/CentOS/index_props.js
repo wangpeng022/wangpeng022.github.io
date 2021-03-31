@@ -43,6 +43,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "jenkins",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -54,6 +58,10 @@ export default {
             },
             {
                 "name": "CentOS",
+                "count": 1
+            },
+            {
+                "name": "jenkins",
                 "count": 1
             },
             {

@@ -1,36 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "tags/TS/",
+    'pagePath': "categories/jenkins/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/TS/index.html",
+    'outputPath': "categories/jenkins/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "TS",
+    'title': "jenkins",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/TypeScript/初识TS.md",
-                "title": "初识TS",
-                "link": "posts/TypeScript/初识TS.html",
-                "date": "2021/03/30",
+                "pagePath": "posts/CentOS/jenkins安装.md",
+                "title": "Centos下jenkins安装",
+                "link": "posts/CentOS/jenkins安装.html",
+                "date": "2021/03/31",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng022@sina.cn"
                 ],
                 "categories": [
-                    "TS"
+                    "jenkins"
                 ],
                 "tags": [
-                    "TS"
+                    "jenkins"
                 ],
-                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
+                "excerpt": "安装步骤： 1. 安装java,jenkins依赖java环境； yum install java 2. 安装wget（没有安装的话） yum install wget -y 3. 下载 jenkins 依赖 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable..."
             }
         ],
         "categories": [
