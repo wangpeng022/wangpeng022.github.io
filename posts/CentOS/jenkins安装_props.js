@@ -25,7 +25,7 @@ export default {
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021/03/31",
+    'date': "2021-03-31T08:13:47.000Z",
     'updated': null,
     'excerpt': "安装步骤： 1. 安装java,jenkins依赖java环境； yum install java 2. 安装wget（没有安装的话） yum install wget -y 3. 下载 jenkins 依赖 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable...",
     'cover': undefined,
@@ -42,7 +42,7 @@ export default {
                 "pagePath": "posts/CentOS/jenkins安装.md",
                 "title": "Centos下jenkins安装",
                 "link": "posts/CentOS/jenkins安装.html",
-                "date": "2021/03/31",
+                "date": "2021-03-31T08:13:47.000Z",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [

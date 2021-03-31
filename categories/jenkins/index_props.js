@@ -18,7 +18,7 @@ export default {
                 "pagePath": "posts/CentOS/jenkins安装.md",
                 "title": "Centos下jenkins安装",
                 "link": "posts/CentOS/jenkins安装.html",
-                "date": "2021/03/31",
+                "date": "2021-03-31T08:13:47.000Z",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
