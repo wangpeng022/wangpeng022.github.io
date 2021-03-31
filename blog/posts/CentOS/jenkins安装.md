@@ -1,7 +1,6 @@
 ---
 title: Centos下jenkins安装
 author: Peng
-date: 2021/03/31
 categories:
 - jenkins
 tags:
