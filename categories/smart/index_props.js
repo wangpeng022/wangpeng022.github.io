@@ -1,36 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "categories/TS/",
+    'pagePath': "categories/smart/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/TS/index.html",
+    'outputPath': "categories/smart/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "TS",
+    'title': "smart",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/TypeScript/初识TS.md",
-                "title": "初识TS",
-                "link": "posts/TypeScript/初识TS.html",
-                "date": "2021/03/30",
+                "pagePath": "posts/smart/sound.md",
+                "title": "很有意思的一段代码",
+                "link": "posts/smart/sound.html",
+                "date": "2021/04/20",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng022@sina.cn"
                 ],
                 "categories": [
-                    "TS"
+                    "smart"
                 ],
                 "tags": [
-                    "TS"
+                    "smart"
                 ],
-                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
+                "excerpt": "直接上代码 const audioCtx = new (window.AudioContext || window.webkitAudioContext)() const observer = new MutationObserver(function(mutationsList) { const oscillator = audioCtx.createOscillator() oscillator.con..."
             }
         ],
         "categories": [

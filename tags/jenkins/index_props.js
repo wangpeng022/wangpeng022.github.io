@@ -47,6 +47,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "smart",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -62,6 +66,10 @@ export default {
             },
             {
                 "name": "jenkins",
+                "count": 1
+            },
+            {
+                "name": "smart",
                 "count": 1
             },
             {

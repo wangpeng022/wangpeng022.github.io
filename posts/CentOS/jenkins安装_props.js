@@ -39,6 +39,24 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/smart/sound.md",
+                "title": "很有意思的一段代码",
+                "link": "posts/smart/sound.html",
+                "date": "2021/04/20",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "smart"
+                ],
+                "tags": [
+                    "smart"
+                ],
+                "excerpt": "直接上代码 const audioCtx = new (window.AudioContext || window.webkitAudioContext)() const observer = new MutationObserver(function(mutationsList) { const oscillator = audioCtx.createOscillator() oscillator.con..."
+            },
+            {
                 "pagePath": "posts/CentOS/jenkins安装.md",
                 "title": "Centos下jenkins安装",
                 "link": "posts/CentOS/jenkins安装.html",
@@ -143,6 +161,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "smart",
+                "count": 1
+            },
+            {
                 "name": "TS",
                 "count": 1
             }
@@ -158,6 +180,10 @@ export default {
             },
             {
                 "name": "jenkins",
+                "count": 1
+            },
+            {
+                "name": "smart",
                 "count": 1
             },
             {
