@@ -1,36 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "categories/TS/",
+    'pagePath': "tags/数字/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/TS/index.html",
+    'outputPath': "tags/数字/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "TS",
+    'title': "数字",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/TypeScript/初识TS.md",
-                "title": "初识TS",
-                "link": "posts/TypeScript/初识TS.html",
-                "date": "2021/03/30",
+                "pagePath": "posts/js/数字失真.md",
+                "title": "js数字类型失真问题",
+                "link": "posts/js/数字失真.html",
+                "date": "2021/05/07",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng022@sina.cn"
                 ],
                 "categories": [
-                    "TS"
+                    "js"
                 ],
                 "tags": [
-                    "TS"
+                    "数字"
                 ],
-                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
+                "excerpt": "js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。 如果超过这个值，那么js会出现不精确的问题。 所以，js中的数字应该小于16位（不包含）。 对于小数运算同样有失真问题，一般解决办法是在末尾添加相应..."
             }
         ],
         "categories": [

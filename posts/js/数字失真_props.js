@@ -1,12 +1,12 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "links/README.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "links/index.html",
-    'title': "友情链接",
+    'pagePath': "posts/js/数字失真.md",
+    'layoutPath': "posts/_layout.tsx",
+    'outputPath': "posts/js/数字失真.html",
+    'title': "js数字类型失真问题",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<!--\n * @Descripttion: \n * @version: \n * @Author: 王鹏\n * @Date: 2021-03-23 17:37:15\n * @LastEditors: 王鹏\n * @LastEditTime: 2021-03-25 08:28:30\n-->\n<h1>友情链接</h1>\n<p>1\n2\n3</p>'
+            __html: '<p>js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。\n如果超过这个值，那么js会出现不精确的问题。</p>\n<p>所以，js中的数字应该小于16位（不包含）。</p>\n<p>对于小数运算同样有失真问题，一般解决办法是在末尾添加相应位数的0，变成整数，然后再运算，最后再去掉相应位数的0。</p>'
         } }),
     'head': null,
     'script': React.createElement(React.Fragment, null,
@@ -15,19 +15,25 @@ export default {
         React.createElement("script", { src: "/index.js", type: "module" })),
     'contentTitle': undefined,
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<!--\n * @Descripttion: \n * @version: \n * @Author: 王鹏\n * @Date: 2021-03-23 17:37:15\n * @LastEditors: 王鹏\n * @LastEditTime: 2021-03-25 08:28:30\n-->\n<h1>友情链接</h1>\n<p>1\n2\n3</p>'
+            __html: '<p>js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。\n如果超过这个值，那么js会出现不精确的问题。</p>\n<p>所以，js中的数字应该小于16位（不包含）。</p>\n<p>对于小数运算同样有失真问题，一般解决办法是在末尾添加相应位数的0，变成整数，然后再运算，最后再去掉相应位数的0。</p>'
         } }),
     'toc': null,
-    'author': "wangpeng022@sina.cn",
+    'author': "Peng",
     'contributors': [
         "wangpeng022@sina.cn"
     ],
-    'date': "2021-05-07T06:33:04.000Z",
+    'date': "2021/05/07",
     'updated': null,
-    'excerpt': "友情链接 1 2 3",
+    'excerpt': "js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。 如果超过这个值，那么js会出现不精确的问题。 所以，js中的数字应该小于16位（不包含）。 对于小数运算同样有失真问题，一般解决办法是在末尾添加相应...",
     'cover': undefined,
+    'categories': [
+        "js"
+    ],
+    'tags': [
+        "数字"
+    ],
     'blog': {
-        "isPost": false,
+        "isPost": true,
         "posts": [
             {
                 "pagePath": "posts/js/数字失真.md",

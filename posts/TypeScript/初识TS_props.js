@@ -41,6 +41,24 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/js/数字失真.md",
+                "title": "js数字类型失真问题",
+                "link": "posts/js/数字失真.html",
+                "date": "2021/05/07",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "js"
+                ],
+                "tags": [
+                    "数字"
+                ],
+                "excerpt": "js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。 如果超过这个值，那么js会出现不精确的问题。 所以，js中的数字应该小于16位（不包含）。 对于小数运算同样有失真问题，一般解决办法是在末尾添加相应..."
+            },
+            {
                 "pagePath": "posts/smart/sound.md",
                 "title": "很有意思的一段代码",
                 "link": "posts/smart/sound.html",
@@ -77,24 +95,6 @@ export default {
                 "excerpt": "安装步骤： 1. 安装java,jenkins依赖java环境； yum install java 2. 安装wget（没有安装的话） yum install wget -y 3. 下载 jenkins 依赖 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable..."
             },
             {
-                "pagePath": "posts/TypeScript/初识TS.md",
-                "title": "初识TS",
-                "link": "posts/TypeScript/初识TS.html",
-                "date": "2021/03/30",
-                "updated": null,
-                "author": "Peng",
-                "contributors": [
-                    "wangpeng022@sina.cn"
-                ],
-                "categories": [
-                    "TS"
-                ],
-                "tags": [
-                    "TS"
-                ],
-                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
-            },
-            {
                 "pagePath": "posts/CentOS/配置CentOS网络.md",
                 "title": "配置CentOS网络",
                 "link": "posts/CentOS/配置CentOS网络.html",
@@ -111,6 +111,24 @@ export default {
                     "CentOS"
                 ],
                 "excerpt": "1.打开配置文件 vi /etc/sysconfig/network-scripts/ifcfg-eth0 2.编辑配置文件 # 从dhcp改成static BOOTPROTO=static # 从no改成yes。系统将在启动时自动开启该接口。 ONBOOT=yes # 设置IP地址 IPADDR=192.168.0.200 # 设置子..."
+            },
+            {
+                "pagePath": "posts/TypeScript/初识TS.md",
+                "title": "初识TS",
+                "link": "posts/TypeScript/初识TS.html",
+                "date": "2021/03/30",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022@sina.cn"
+                ],
+                "categories": [
+                    "TS"
+                ],
+                "tags": [
+                    "TS"
+                ],
+                "excerpt": "概述 TS -> typescript javascript 的超集，微软出品，扩充javascript对类型判断和报错提示的不足。 开撸代码 1.interface - > 接口 interface A { num: number, str: string } let obj:A = {a:123,b:'456'}; 2.联合类型 let n..."
             },
             {
                 "pagePath": "posts/2021/使用Pagic.md",
@@ -163,6 +181,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "js",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
@@ -190,6 +212,10 @@ export default {
             },
             {
                 "name": "TS",
+                "count": 1
+            },
+            {
+                "name": "数字",
                 "count": 1
             }
         ]

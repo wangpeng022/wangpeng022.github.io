@@ -65,6 +65,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "js",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
@@ -92,6 +96,10 @@ export default {
             },
             {
                 "name": "TS",
+                "count": 1
+            },
+            {
+                "name": "数字",
                 "count": 1
             }
         ]
