@@ -22,7 +22,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "TS"
@@ -51,6 +51,14 @@ export default {
                 "count": 1
             },
             {
+                "name": "npm",
+                "count": 1
+            },
+            {
+                "name": "react",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
@@ -73,11 +81,19 @@ export default {
                 "count": 1
             },
             {
+                "name": "react",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
             {
                 "name": "TS",
+                "count": 1
+            },
+            {
+                "name": "verdaccio npm",
                 "count": 1
             },
             {

@@ -1,0 +1,47 @@
+<!doctype html><html class="" data-reactroot=""><head>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="个人博客"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">私仓 · 我的博客</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><a class="czs-menu-l show_on_mobile aside_button_open" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a><a class="show_on_mobile aside_button_text" href="/">我的博客</a><aside class="hide_on_mobile"><div class="aside_card"><a class="czs-menu-l show_on_mobile aside_button_close" href="#" style="background-image:url(&quot;/assets/czs-close-l.svg&quot;)"></a><h1><a href="/">我的博客</a></h1><p class="description">个人博客</p><ul class="social list_style_none"><li class="flex_center"><a class="czs-github-logo" href="https://github.com/wangpeng022" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="flex_center"><a class="czs-message-l" href="mailto:wangpeng022@sina.cn" target="_blank" style="background-image:url(&quot;/assets/czs-message-l.svg&quot;)"></a></li><li style="flex-grow:1"></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul><nav><ul class="menu list_style_none"><li><a class="flex_center" href="/"><span class="czs-home-l" style="background-image:url(&quot;/assets/czs-home-l.svg&quot;)"></span>首页</a></li><li><a class="flex_center" href="/categories/"><span class="czs-category-l" style="background-image:url(&quot;/assets/czs-category-l.svg&quot;)"></span>分类</a></li><li><a class="flex_center" href="/tags/"><span class="czs-tag-l" style="background-image:url(&quot;/assets/czs-tag-l.svg&quot;)"></span>标签</a></li><li><a class="flex_center" href="/about/"><span class="czs-about-l" style="background-image:url(&quot;/assets/czs-about-l.svg&quot;)"></span>关于</a></li><li><a class="flex_center" href="/archives/"><span class="czs-box-l" style="background-image:url(&quot;/assets/czs-box-l.svg&quot;)"></span>归档</a></li><li><a class="flex_center" href="/links/index.html"><span class="czs-link-l" style="background-image:url(&quot;/assets/czs-link-l.svg&quot;)"></span>友情链接</a></li></ul></nav></div></aside><section class="main"><div class="main_post_meta"><time dateTime="2021/05/24">2021-05-24</time> · <!-- -->Peng</div><article><h4 id="qa">Q&amp;A<a class="anchor" href="#qa">§</a></h4>
+<p>1.问：为什么要搭建npm私仓？
+答：因为即想使用npm的便利，又不想让大家看到自己发布的npm包。</p>
+<p>2.问：为什么不用npm的付费服务？
+答：穷。
+3.问：为什么不使用“sinopia”？
+答：近两年未更新（见下图），不值得使用，verdaccio才是王道。
+<img src="https://ftp.bmp.ovh/imgs/2021/05/7b1b950b5a8d7d1c.png" alt=""></p>
+<h4 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：<a class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">§</a></h4>
+<p>1.全局安装verdaccio</p>
+<pre class="language-js"><code class="language-js">
+npm install <span class="token operator">--</span>global verdaccio
+
+</code></pre>
+<p>2.运行，超级简单，直接输入命令：</p>
+<pre class="language-js"><code class="language-js">verdaccio
+
+</code></pre>
+<p>成功后的样子：
+<img src="https://ftp.bmp.ovh/imgs/2021/05/7abe4269023faf7f.png" alt="">
+默认端口：4873</p>
+<p>3.注册用户：</p>
+<pre class="language-js"><code class="language-js">npm adduser –registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>
+
+</code></pre>
+<p>输入用户名和密码</p>
+<p>4.切到package包跟目录，发布到4873</p>
+<pre class="language-js"><code class="language-js">npm publish http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>
+
+</code></pre>
+<p>此时，打开http://localhost:4873，能查看到新发布上去的包。</p>
+<p>5.在使用的地方切换源</p>
+<pre class="language-js"><code class="language-js">npm <span class="token keyword">set</span> registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>
+
+</code></pre>
+<p>tips: 具体使用详情参考官网https://verdaccio.org/ （不太容易打开）</p></article></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

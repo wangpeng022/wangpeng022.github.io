@@ -1,36 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "categories/js/",
+    'pagePath': "categories/react/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/js/index.html",
+    'outputPath': "categories/react/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "js",
+    'title': "react",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/js/数字失真.md",
-                "title": "js数字类型失真问题",
-                "link": "posts/js/数字失真.html",
-                "date": "2021/05/07",
+                "pagePath": "posts/react/重学react（从15到17）.md",
+                "title": "重学react（从15到17）",
+                "link": "posts/react/重学react（从15到17）.html",
+                "date": "2021/05/11",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng01"
                 ],
                 "categories": [
-                    "js"
+                    "react"
                 ],
                 "tags": [
-                    "数字"
+                    "react"
                 ],
-                "excerpt": "js的number类型有个最大值（安全值）：即2的53次方，为9007199254740992。 如果超过这个值，那么js会出现不精确的问题。 所以，js中的数字应该小于16位（不包含）。 对于小数运算同样有失真问题，一般解决办法是在末尾添加相应..."
+                "excerpt": ""
             }
         ],
         "categories": [

@@ -1,33 +1,39 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "archives/README.md",
-    'layoutPath': "archives/_layout.tsx",
-    'outputPath': "archives/index.html",
-    'title': "归档",
+    'pagePath': "posts/npm/私仓.md",
+    'layoutPath': "posts/_layout.tsx",
+    'outputPath': "posts/npm/私仓.html",
+    'title': "私仓",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>归档</h1>'
+            __html: '<h4 id="qa">Q&amp;A<a class="anchor" href="#qa">§</a></h4>\n<p>1.问：为什么要搭建npm私仓？\n答：因为即想使用npm的便利，又不想让大家看到自己发布的npm包。</p>\n<p>2.问：为什么不用npm的付费服务？\n答：穷。\n3.问：为什么不使用“sinopia”？\n答：近两年未更新（见下图），不值得使用，verdaccio才是王道。\n<img src="https://ftp.bmp.ovh/imgs/2021/05/7b1b950b5a8d7d1c.png" alt=""></p>\n<h4 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：<a class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">§</a></h4>\n<p>1.全局安装verdaccio</p>\n<pre class="language-js"><code class="language-js">\nnpm install <span class="token operator">--</span>global verdaccio\n\n</code></pre>\n<p>2.运行，超级简单，直接输入命令：</p>\n<pre class="language-js"><code class="language-js">verdaccio\n\n</code></pre>\n<p>成功后的样子：\n<img src="https://ftp.bmp.ovh/imgs/2021/05/7abe4269023faf7f.png" alt="">\n默认端口：4873</p>\n<p>3.注册用户：</p>\n<pre class="language-js"><code class="language-js">npm adduser –registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>输入用户名和密码</p>\n<p>4.切到package包跟目录，发布到4873</p>\n<pre class="language-js"><code class="language-js">npm publish http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>此时，打开http://localhost:4873，能查看到新发布上去的包。</p>\n<p>5.在使用的地方切换源</p>\n<pre class="language-js"><code class="language-js">npm <span class="token keyword">set</span> registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>tips: 具体使用详情参考官网https://verdaccio.org/ （不太容易打开）</p>'
         } }),
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "\u5F52\u6863"),
+    'contentTitle': undefined,
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: ''
+            __html: '<h4 id="qa">Q&amp;A<a class="anchor" href="#qa">§</a></h4>\n<p>1.问：为什么要搭建npm私仓？\n答：因为即想使用npm的便利，又不想让大家看到自己发布的npm包。</p>\n<p>2.问：为什么不用npm的付费服务？\n答：穷。\n3.问：为什么不使用“sinopia”？\n答：近两年未更新（见下图），不值得使用，verdaccio才是王道。\n<img src="https://ftp.bmp.ovh/imgs/2021/05/7b1b950b5a8d7d1c.png" alt=""></p>\n<h4 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法：<a class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">§</a></h4>\n<p>1.全局安装verdaccio</p>\n<pre class="language-js"><code class="language-js">\nnpm install <span class="token operator">--</span>global verdaccio\n\n</code></pre>\n<p>2.运行，超级简单，直接输入命令：</p>\n<pre class="language-js"><code class="language-js">verdaccio\n\n</code></pre>\n<p>成功后的样子：\n<img src="https://ftp.bmp.ovh/imgs/2021/05/7abe4269023faf7f.png" alt="">\n默认端口：4873</p>\n<p>3.注册用户：</p>\n<pre class="language-js"><code class="language-js">npm adduser –registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>输入用户名和密码</p>\n<p>4.切到package包跟目录，发布到4873</p>\n<pre class="language-js"><code class="language-js">npm publish http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>此时，打开http://localhost:4873，能查看到新发布上去的包。</p>\n<p>5.在使用的地方切换源</p>\n<pre class="language-js"><code class="language-js">npm <span class="token keyword">set</span> registry http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">4873</span>\n\n</code></pre>\n<p>tips: 具体使用详情参考官网https://verdaccio.org/ （不太容易打开）</p>'
         } }),
     'toc': null,
-    'author': "wangpeng01",
+    'author': "Peng",
     'contributors': [
         "wangpeng01"
     ],
-    'date': "2021-10-19T05:55:14.000Z",
+    'date': "2021/05/24",
     'updated': null,
-    'excerpt': "",
-    'cover': undefined,
+    'excerpt': "Q&A 1.问：为什么要搭建npm私仓？ 答：因为即想使用npm的便利，又不想让大家看到自己发布的npm包。 2.问：为什么不用npm的付费服务？ 答：穷。 3.问：为什么不使用“sinopia”？ 答：近两年未更新（见下图），不值得使用，verd...",
+    'cover': "https://ftp.bmp.ovh/imgs/2021/05/7b1b950b5a8d7d1c.png",
+    'categories': [
+        "npm"
+    ],
+    'tags': [
+        "verdaccio npm"
+    ],
     'blog': {
-        "isPost": false,
+        "isPost": true,
         "posts": [
             {
                 "pagePath": "posts/npm/私仓.md",

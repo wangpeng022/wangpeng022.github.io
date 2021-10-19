@@ -18,17 +18,54 @@ export default {
             __html: '<!--\n * @Descripttion: \n * @version: \n * @Author: 王鹏\n * @Date: 2021-03-23 17:37:15\n * @LastEditors: 王鹏\n * @LastEditTime: 2021-03-25 08:28:30\n-->\n<h1>友情链接</h1>\n<p>1\n2\n3</p>'
         } }),
     'toc': null,
-    'author': "wangpeng022@sina.cn",
+    'author': "wangpeng01",
     'contributors': [
-        "wangpeng022@sina.cn"
+        "wangpeng01"
     ],
-    'date': "2021-05-07T06:33:04.000Z",
+    'date': "2021-10-19T05:55:14.000Z",
     'updated': null,
     'excerpt': "友情链接 1 2 3",
     'cover': undefined,
     'blog': {
         "isPost": false,
         "posts": [
+            {
+                "pagePath": "posts/npm/私仓.md",
+                "title": "私仓",
+                "link": "posts/npm/私仓.html",
+                "date": "2021/05/24",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng01"
+                ],
+                "categories": [
+                    "npm"
+                ],
+                "tags": [
+                    "verdaccio npm"
+                ],
+                "excerpt": "Q&A 1.问：为什么要搭建npm私仓？ 答：因为即想使用npm的便利，又不想让大家看到自己发布的npm包。 2.问：为什么不用npm的付费服务？ 答：穷。 3.问：为什么不使用“sinopia”？ 答：近两年未更新（见下图），不值得使用，verd...",
+                "cover": "https://ftp.bmp.ovh/imgs/2021/05/7b1b950b5a8d7d1c.png"
+            },
+            {
+                "pagePath": "posts/react/重学react（从15到17）.md",
+                "title": "重学react（从15到17）",
+                "link": "posts/react/重学react（从15到17）.html",
+                "date": "2021/05/11",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng01"
+                ],
+                "categories": [
+                    "react"
+                ],
+                "tags": [
+                    "react"
+                ],
+                "excerpt": ""
+            },
             {
                 "pagePath": "posts/js/数字失真.md",
                 "title": "js数字类型失真问题",
@@ -37,7 +74,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "js"
@@ -55,7 +92,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "smart"
@@ -73,7 +110,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "jenkins"
@@ -91,7 +128,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "CentOS"
@@ -109,7 +146,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "TS"
@@ -127,7 +164,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "其他"
@@ -145,7 +182,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng022@sina.cn"
+                    "wangpeng01"
                 ],
                 "categories": [
                     "其他"
@@ -174,6 +211,14 @@ export default {
                 "count": 1
             },
             {
+                "name": "npm",
+                "count": 1
+            },
+            {
+                "name": "react",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
@@ -196,11 +241,19 @@ export default {
                 "count": 1
             },
             {
+                "name": "react",
+                "count": 1
+            },
+            {
                 "name": "smart",
                 "count": 1
             },
             {
                 "name": "TS",
+                "count": 1
+            },
+            {
+                "name": "verdaccio npm",
                 "count": 1
             },
             {
