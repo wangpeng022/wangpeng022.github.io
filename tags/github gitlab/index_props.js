@@ -1,54 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "tags/其他/",
+    'pagePath': "tags/github gitlab/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/其他/index.html",
+    'outputPath': "tags/github gitlab/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "其他",
+    'title': "github gitlab",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2021/使用Pagic.md",
-                "title": "使用Pagic",
-                "link": "posts/2021/使用Pagic.html",
-                "date": "2021/03/25",
+                "pagePath": "posts/git/本地环境配置两个git账号.md",
+                "title": "本地环境配置两个git账号（github和gitlab相互不干扰）",
+                "link": "posts/git/本地环境配置两个git账号.html",
+                "date": "2021/10/19",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng022"
                 ],
                 "categories": [
-                    "其他"
+                    "git"
                 ],
                 "tags": [
-                    "其他"
+                    "github gitlab"
                 ],
-                "excerpt": "1.安装Pagic之前,需要有deno环境 查看自己是否安装了deno deno -V https://ftp.bmp.ovh/imgs/2021/03/63349568fa5374a7.png # 安装 pagic deno install --unstable --allow-read --allow-write --allow-net --allow-run --name..."
-            },
-            {
-                "pagePath": "posts/2021/写在开头.md",
-                "title": "写在开头",
-                "link": "posts/2021/写在开头.html",
-                "date": "2021/03/23",
-                "updated": null,
-                "author": "Peng",
-                "contributors": [
-                    "wangpeng022"
-                ],
-                "categories": [
-                    "其他"
-                ],
-                "tags": [
-                    "其他"
-                ],
-                "excerpt": "新的blog,新的开始"
+                "excerpt": "步骤： 1. 生成两对 公/私钥，一个账户一对。正常情况下直接执行 ssh-keygen 默认生成一对，但是咱们现在要生成两对(名字随意，但是要和后边的config文件对应上)： ssh-keygen -t rsa -C \"注册github邮箱\" -f ~/.ssh/id_rsa_1 ..."
             }
         ],
         "categories": [

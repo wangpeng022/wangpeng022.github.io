@@ -20,7 +20,7 @@ export default {
     'toc': null,
     'author': "Peng",
     'contributors': [
-        "wangpeng01"
+        "wangpeng022"
     ],
     'date': "2021/05/11",
     'updated': null,
@@ -36,6 +36,42 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/CentOS/CentOS安装node.md",
+                "title": "CentOS安装node",
+                "link": "posts/CentOS/CentOS安装node.html",
+                "date": "2021/10/19",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022"
+                ],
+                "categories": [
+                    "CentOS"
+                ],
+                "tags": [
+                    "node"
+                ],
+                "excerpt": "安装步骤： 1. 去node官网复制下载链接（下载相应的LTS版本）； 2. 开始下载安装包； wget https://npm.taobao.org/mirrors/node/v14.18.1/node-v14.18.1-linux-x64.tar.xz 3. 解压 tar -xvf node-v10.15.3-linux-x64.tar.xz 4..."
+            },
+            {
+                "pagePath": "posts/git/本地环境配置两个git账号.md",
+                "title": "本地环境配置两个git账号（github和gitlab相互不干扰）",
+                "link": "posts/git/本地环境配置两个git账号.html",
+                "date": "2021/10/19",
+                "updated": null,
+                "author": "Peng",
+                "contributors": [
+                    "wangpeng022"
+                ],
+                "categories": [
+                    "git"
+                ],
+                "tags": [
+                    "github gitlab"
+                ],
+                "excerpt": "步骤： 1. 生成两对 公/私钥，一个账户一对。正常情况下直接执行 ssh-keygen 默认生成一对，但是咱们现在要生成两对(名字随意，但是要和后边的config文件对应上)： ssh-keygen -t rsa -C \"注册github邮箱\" -f ~/.ssh/id_rsa_1 ..."
+            },
+            {
                 "pagePath": "posts/npm/私仓.md",
                 "title": "私仓",
                 "link": "posts/npm/私仓.html",
@@ -43,7 +79,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "npm"
@@ -62,7 +98,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "react"
@@ -80,7 +116,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "js"
@@ -98,7 +134,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "smart"
@@ -116,7 +152,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "jenkins"
@@ -134,7 +170,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "CentOS"
@@ -152,7 +188,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "TS"
@@ -170,7 +206,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "其他"
@@ -188,7 +224,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "其他"
@@ -201,11 +237,15 @@ export default {
         ],
         "categories": [
             {
+                "name": "CentOS",
+                "count": 2
+            },
+            {
                 "name": "其他",
                 "count": 2
             },
             {
-                "name": "CentOS",
+                "name": "git",
                 "count": 1
             },
             {
@@ -243,7 +283,15 @@ export default {
                 "count": 1
             },
             {
+                "name": "github gitlab",
+                "count": 1
+            },
+            {
                 "name": "jenkins",
+                "count": 1
+            },
+            {
+                "name": "node",
                 "count": 1
             },
             {

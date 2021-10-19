@@ -22,7 +22,7 @@ export default {
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
-                    "wangpeng01"
+                    "wangpeng022"
                 ],
                 "categories": [
                     "npm"
@@ -36,11 +36,15 @@ export default {
         ],
         "categories": [
             {
+                "name": "CentOS",
+                "count": 2
+            },
+            {
                 "name": "其他",
                 "count": 2
             },
             {
-                "name": "CentOS",
+                "name": "git",
                 "count": 1
             },
             {
@@ -78,7 +82,15 @@ export default {
                 "count": 1
             },
             {
+                "name": "github gitlab",
+                "count": 1
+            },
+            {
                 "name": "jenkins",
+                "count": 1
+            },
+            {
+                "name": "node",
                 "count": 1
             },
             {

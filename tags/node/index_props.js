@@ -1,54 +1,36 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "tags/其他/",
+    'pagePath': "tags/node/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/其他/index.html",
+    'outputPath': "tags/node/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "其他",
+    'title': "node",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2021/使用Pagic.md",
-                "title": "使用Pagic",
-                "link": "posts/2021/使用Pagic.html",
-                "date": "2021/03/25",
+                "pagePath": "posts/CentOS/CentOS安装node.md",
+                "title": "CentOS安装node",
+                "link": "posts/CentOS/CentOS安装node.html",
+                "date": "2021/10/19",
                 "updated": null,
                 "author": "Peng",
                 "contributors": [
                     "wangpeng022"
                 ],
                 "categories": [
-                    "其他"
+                    "CentOS"
                 ],
                 "tags": [
-                    "其他"
+                    "node"
                 ],
-                "excerpt": "1.安装Pagic之前,需要有deno环境 查看自己是否安装了deno deno -V https://ftp.bmp.ovh/imgs/2021/03/63349568fa5374a7.png # 安装 pagic deno install --unstable --allow-read --allow-write --allow-net --allow-run --name..."
-            },
-            {
-                "pagePath": "posts/2021/写在开头.md",
-                "title": "写在开头",
-                "link": "posts/2021/写在开头.html",
-                "date": "2021/03/23",
-                "updated": null,
-                "author": "Peng",
-                "contributors": [
-                    "wangpeng022"
-                ],
-                "categories": [
-                    "其他"
-                ],
-                "tags": [
-                    "其他"
-                ],
-                "excerpt": "新的blog,新的开始"
+                "excerpt": "安装步骤： 1. 去node官网复制下载链接（下载相应的LTS版本）； 2. 开始下载安装包； wget https://npm.taobao.org/mirrors/node/v14.18.1/node-v14.18.1-linux-x64.tar.xz 3. 解压 tar -xvf node-v10.15.3-linux-x64.tar.xz 4..."
             }
         ],
         "categories": [
