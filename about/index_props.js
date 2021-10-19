@@ -25,7 +25,7 @@ export default {
     'contributors': [
         "wangpeng022"
     ],
-    'date': "2021-10-19T07:54:55.000Z",
+    'date': "2021-10-19T07:58:44.000Z",
     'updated': null,
     'excerpt': "自我介绍",
     'cover': undefined,
