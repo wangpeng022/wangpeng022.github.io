@@ -34,7 +34,7 @@ mv node-v14.18.1-linux-x64 node
 
 ```
 
-5. 配置软连接，使全局都可以使用node命令
+6. 配置软连接，使全局都可以使用node命令
 
 ```
 ln -s /usr/local/node/bin/node /usr/bin/node  --将node源文件映射到usr/bin下的node文件
